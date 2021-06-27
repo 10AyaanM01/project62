@@ -1,14 +1,65 @@
 <html>
   <head>
-    <center>
+    <title>Photo Gallery</title>
+    <style type="text/css">
+      #home{
+  padding:20px;
+  font-size:42px;
+  background:pink;
+}
+ul{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#333;
+  position:fixed;
+  top:0;
+  width:100%;
+}
+h2{
+  font-size:20px;
+  color:#003487;
+}
+li{
+  float:left;
+}
+li a{
+  display:block;
+  color:white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+}
+
+li a:hover{
+  background-color:#1111;
+}
+.line{
+    height: 6px;
+    background-color: black;
+    width:70px;
+    margin:8px auto;
+}
+#Grids{
+  font-size:30px;
+}
+#slides{
+  font-size:30px;
+}
+    </style>
+  </head>
+<body>
+  <center>
       <ul class="menu">
         <li class="links"><a href="#home">Home</a></li>
         <li class="links"><a href="#Grids">Grid View</a></li>
         <li class="links"><a href="#slides">Slide view</a></li>
       </ul>
     </center>
-  </head>
-  <body>
+    <section id="home">
+      <img src="SC30vsLJ23.jpeg">
+    </section>
     <section id="Grids">
       <h2>Grid view</h2>
       <br>
@@ -53,15 +104,38 @@
         <img class="img-responsive" src="KD7.jpg"
          style="width:100%">
         <div class="carousel-caption">
-          <h3>Kevin Durant No.7 - Brooklyn Nets</h3>
+          <h3>Kevin Durant No.34 - Brooklyn Nets </h3>
         </div>
       </div>
       <div class="item">
         <img class="img-responsive" src="giannis.jpeg"
          style="width:100%">
         <div class="carousel-caption">
-          <h3>Kevin Durant No.7 - Brooklyn Nets</h3>
+          <h3>Giannis Antetkounmpo No.34 - Milwaukee Bucks</h3>
+          <div class="item">
+        <img class="img-responsive" src="SC30-Warriors.jpeg"
+         style="width:100%">
+        <div class="carousel-caption">
+          <h3>Stephen Curry No.30 - Golden State Warriors</h3>
         </div>
+        <div class="item">
+        <img class="img-responsive" src="SC30-Warriors.jpeg"
+         style="width:100%">
+        <div class="carousel-caption">
+          <h3>Paul George No.13 - LA Clippers</h3>
+        </div>
+        <div class="item">
+        <img class="img-responsive" src="SC30-Warriors.jpeg"
+         style="width:100%">
+        <div class="carousel-caption">
+          <h3>Joel Emblid No.21 - Philidelphia 76ers</h3>
+        </div>
+         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
       </div>
     </section>
   </body>
